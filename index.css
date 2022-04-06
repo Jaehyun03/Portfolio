@@ -1,106 +1,142 @@
+/* 강원교육튼튼체 */
 @font-face {
-    font-family: 'GangwonEduPowerExtraBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+/* 해남체 */
+@font-face { 
+  font-family: 'HaenamFont';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/HaenamFont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #3E606F;
+  color: #fff;
+}
+::selection {
+  background: #3E606F;
+  color: #fff;
+}
+
+
+.Neutral-Blue-1-hex { color: #FCFFF5; }
+.Neutral-Blue-2-hex { color: #CBDBD7; }
+.Neutral-Blue-3-hex { color: #91AAB4; }
+.Neutral-Blue-4-hex { color: #3E606F; }
+.Neutral-Blue-5-hex { color: #193441; }
+
 
 body {
-    padding: 0;
-    border: 0;
-    margin: 0;
-}
-
-body { 
-    background-color: white;
+  background-color: #FCFFF5;
 }
 
 h1 {
-    font-family: 'GangwonEduPowerExtraBoldA';
-    margin: 0;
-
+  font-family: 'GangwonEduPowerExtraBoldA';
 }
-
-h1, h2 { 
-    color: black;
-}
-
 
 nav {
-    position: fixed;
-    width: 100%;
-    height: 30px;
-    background-color: gray;
-    z-index: 1;
-    opacity: 0.5;
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background-color: #91AAB4;
+  z-index: 1;
+  opacity: 0.5;
 }
+
 footer {
-    position: relative;
-    width: 100%;
-    height: 150%;
-    background-color: gray;
-    display: flex;
-    
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #91AAB4;
+  display: flex;
+  justify-content: center;
+  font-family: 'HaenamFont';
+  font-size: 20px;
 }
 
 section {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
-}
-
-.video {
-    height: 100vh;
 }
 
 .video_box {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%
-    
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%
 }
 
 .video_box video {
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0.8;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-h1 .Title {
-    width: 100%;
-    text-align: center;
+h1.main_title {
+  text-align: center;
+  color: #193441;
+  font-size: 75px;
 }
 
-button#color {
-    background-color: gray;
-    width: 80px;
-    height: 30px;
-    border: 0;
-    border-radius: 15px;
-    cursor: pointer;
-    position: fixed;
-    outline: 0;
-    right: 70px;
-    bottom: 70px;
-    z-index: 1;
+h1.section_title {
+  font-size: 50px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.flex > span {
+  width: 300px;
+  height: 25vh;
+  text-align: center;
+}
+
+
+
+
+
+/* button#color {
+  background-color: gray;
+  width: 80px;
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  position: fixed;
+  outline: 0;
+  right: 70px;
+  bottom: 70px;
+  z-index: 1;
 
 }
 
 button#color:hover {
-    background-color: #FFF;
-    border-color: white;
-    color: black;
-}
+  background-color: #FFF;
+  border-color: white;
+  color: black;
+} */
